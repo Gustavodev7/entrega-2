@@ -16,7 +16,7 @@ Para a api rodar por exemplo :
 http://192.168.0.91:8080/api/readings
 
 
-Utilizei o comando seguinte para adicionar os sensores no terminal : 
+Utilizei o comando seguinte para adicionar os sensores no terminal (para funcionar precisa atualizar o IP, de todos curl : 
 
 curl -X POST http://192.168.15.104:8080/api/readings \
   -H "Content-Type: application/json" \
@@ -25,10 +25,6 @@ curl -X POST http://192.168.15.104:8080/api/readings \
 curl -X POST http://192.168.15.104:8080/api/readings \
   -H "Content-Type: application/json" \
   -d '{"sensorId":"Sensor de Fluxo","readingValue":35.7,"timestamp":"2025-06-11T11:46:00"}'
-
-curl -X POST http://192.168.15.104:8080/api/readings \
-  -H "Content-Type: application/json" \
-  -d '{"sensorId":"Sensor de Vazão","readingValue":51.3,"timestamp":"2025-06-11T11:47:00"}'
 
 curl -X POST http://192.168.15.104:8080/api/readings \
   -H "Content-Type: application/json" \
